@@ -67,82 +67,63 @@ def f1_results(races):
     for r in out: r["classification"].sort(key=lambda x: int(x["pos"]) if x["pos"].isdigit() else 999)
     return out
 
-# ---- F2/F3 via Blacktop Data (https://ocblacktop.com/api/formula-2). Documented endpoints:
-#   GET /v1/{series}/events                         -> {"upcoming":[{id,name,round,dateStart,dateEnd,location:{name,country:{name}}}], ...}
-#   GET /v1/{series}/events/{eventId}/sessions      -> sessions in chronological order
-#   GET /v1/{series}/events/{eventId}/sessions/{sessionId}/results  (shape documented for F1; "same shape" for all series)
-#   GET /v1/{series}/standings/drivers | /standings/teams
-# Only the /events example response is published; other field names are read defensively and the
-# raw responses are saved to .cache/blacktop-*.json so the parser can be verified once a key exists.
-# Free tier: 7,500 req/month, 60 req/min, server-side only, non-commercial. We cache 1h; ~2 runs per 3h is well within.
+# ---- F2/F3 via Orange Cat Blacktop (https://ocblacktop.com/api/formula-2), header x-api-key.
+# Verified with a real key (2026-10-14):
+#   GET /v1/{series}/events?limit=50 -> {"data":[{id,name,dateStart,dateEnd,status,location:{name,city,country},
+#        schedule:[{id,name,type(practice|qualifying|sprint|race),startTime,status}]}], "meta":{page,limit,total,totalPages}}
+#        (newest first, so page 1 covers the current season)
+#   GET /v1/{series}/events/{eventId}/sessions/{sessionId}/results -> [{position,displayTime,laps,status,points,driver:{firstName,lastName},team:{name}}]
+#   GET /v1/{series}/standings/drivers -> [{position,points,firstName,lastName,teams:[]}] ; /standings/teams -> [{position,points,name}]
+# Free tier: 7,500 req/month, 60/min, server-side only, non-commercial.
+# Budget per run: 3 calls/series (events + 2 standings, cached 3h) -> ~1,500/month for F2+F3 at 8 runs/day.
+# Results of finished sessions never change -> cached 30 days (one-off ~25 calls per series per season).
 BT = "https://api.ocblacktop.com/v1"
-def _list(x, *keys):
-    if isinstance(x, list): return x
-    if isinstance(x, dict):
-        for k in keys + ("data", "results", "items", "standings"):
-            if isinstance(x.get(k), list): return x[k]
-    return []
-def _g(d, *ks, default=""):
-    for k in ks:
-        v = d
-        for part in k.split("."):
-            v = v.get(part) if isinstance(v, dict) else None
-        if v not in (None, ""): return v
-    return default
-def _name(d):
-    if isinstance(d, str): return d
-    if not isinstance(d, dict): return ""
-    n = _g(d, "name", "fullName", "displayName")
-    return n or f'{_g(d, "firstName", "givenName")} {_g(d, "lastName", "familyName")}'.strip()
+def _num(x):
+    try: return f"{float(x):g}"
+    except (TypeError, ValueError): return str(x or "")
 
 def feeder(series):
     key = os.environ.get("BLACKTOP_API_KEY")
     if not key:
         return {"status": "coming_soon", "note": "Needs a free Blacktop Data API key (BLACKTOP_API_KEY). No data shown until then."}
     H = {"x-api-key": key}
-    def call(path, ttl=None):
-        d = get(f"{BT}/{series}{path}", H, ttl)
-        (CACHE / f"blacktop-{series}-{hashlib.sha1(path.encode()).hexdigest()[:8]}.json").write_text(json.dumps({"path": path, "body": d})[:200000])
-        return d
+    call = lambda path, ttl: get(f"{BT}/{series}{path}", H, ttl)
     try:
-        ev = call("/events?limit=50", 3 * 3600)
-        events = (_list(ev, "upcoming") + _list(ev, "past", "completed", "events")) if isinstance(ev, dict) else _list(ev)
-        seen, evs = set(), []
-        for e in events:
-            if e.get("id") in seen: continue
-            seen.add(e.get("id")); evs.append(e)
-        evs.sort(key=lambda e: str(_g(e, "dateStart", "date")))
-        today = dt.date.today().isoformat()
-        sessions, results = [], []
-        for e in evs:
-            ev_name = f'{_g(e, "name")} (Round {_g(e, "round")})'; place = _g(e, "location.name", "location.city")
-            past = str(_g(e, "dateEnd", "dateStart")) < today
-            # Quota: past rounds never change -> cache 30 days; next 3 rounds 3h; later rounds 1 day.
-            nxt = [x for x in evs if str(_g(x, "dateEnd", "dateStart")) >= today][:3]
-            ttl = 30 * 86400 if past else (3 * 3600 if e in nxt else 86400)
-            if True:
-                for s in _list(call(f'/events/{e["id"]}/sessions', ttl), "sessions"):
-                    start = _g(s, "startTime", "start", "dateStart", "date")
-                    label = _g(s, "name", "type")
-                    if start and not past:
-                        sessions.append({"event": ev_name, "session": label, "start": str(start), "place": place})
-                    if past and any(w in str(label).lower() for w in ("race", "sprint", "feature")) and s.get("id"):
-                        cls = [{"pos": str(_g(r, "position", "pos")), "name": _name(_g(r, "driver", default={})) or _name(r),
-                                "team": _name(_g(r, "team", "constructor", default={})), "time": str(_g(r, "time", "gap", "status")),
-                                "points": str(_g(r, "points", default=0))}
-                               for r in _list(call(f'/events/{e["id"]}/sessions/{s["id"]}/results', 30 * 86400), "results", "classification")]
-                        if cls: results.append({"round": str(_g(e, "round")), "event": f'{_g(e, "name")} – {label}', "date": str(_g(s, "startTime", "date", default=_g(e, "dateEnd")))[:10], "place": place, "classification": cls})
-        st = lambda rows, team: [{"pos": str(_g(r, "position", "pos")), "name": _name(_g(r, "team", default={})) if team else (_name(_g(r, "driver", default={})) or _name(r)),
-                                  "team": "" if team else _name(_g(r, "team", default={})), "points": str(_g(r, "points", default=0)), "wins": str(_g(r, "wins", default=""))} for r in rows]
-        drivers = st(_list(call("/standings/drivers", 3 * 3600), "drivers"), False)
-        teams = st(_list(call("/standings/teams", 3 * 3600), "teams"), True)
-        if not (drivers or sessions or results):
-            return {"status": "coming_soon", "note": "Blacktop responded but the format wasn't recognised; parser needs updating."}
+        evs = call("/events?limit=50", 3 * 3600)["data"]
+        season = max(e["dateStart"][:4] for e in evs)
+        cur = sorted([e for e in evs if e["dateStart"].startswith(season)], key=lambda e: e["dateStart"])
+        sessions, results, team_of = [], [], {}
+        for rnd, e in enumerate(cur, 1):
+            place = (e.get("location") or {}).get("name") or e["name"]
+            ev_name = f'{e["name"]} (Round {rnd})'
+            for sx in sorted(e.get("schedule") or [], key=lambda x: x.get("startTime") or ""):
+                if sx.get("status") != "completed":
+                    if sx.get("startTime"):
+                        sessions.append({"event": ev_name, "session": sx["name"], "start": sx["startTime"].replace(".000Z", "Z"), "place": place})
+                elif sx.get("type") in ("sprint", "race"):
+                    rows = call(f'/events/{e["id"]}/sessions/{sx["id"]}/results', 30 * 86400)
+                    cls = []
+                    for r in rows if isinstance(rows, list) else []:
+                        d, t = r.get("driver") or {}, (r.get("team") or {}).get("name", "")
+                        nm = f'{d.get("firstName","")} {d.get("lastName","")}'.strip()
+                        team_of[nm] = t
+                        cls.append({"pos": str(r.get("position") or r.get("status") or "-"), "name": nm, "team": t,
+                                    "time": r.get("displayTime") or r.get("status") or "", "points": _num(r.get("points"))})
+                    cls.sort(key=lambda x: int(x["pos"]) if x["pos"].isdigit() else 999)
+                    if cls: results.append({"round": str(rnd), "event": f'{e["name"]} – {sx["name"]}', "date": (sx.get("startTime") or e["dateEnd"])[:10],
+                                            "place": place, "classification": cls})
+        drivers = [{"pos": str(r["position"]), "name": f'{r.get("firstName","")} {r.get("lastName","")}'.strip(), "points": _num(r.get("points")), "wins": ""}
+                   for r in call("/standings/drivers", 3 * 3600)]
+        for d in drivers: d["team"] = team_of.get(d["name"], "")
+        teams = [{"pos": str(r["position"]), "name": r["name"], "points": _num(r.get("points")), "wins": ""} for r in call("/standings/teams", 3 * 3600)]
+        for d in drivers: d["wins"] = str(sum(1 for r in results if r["classification"] and r["classification"][0]["name"] == d["name"]))
+        for t in teams: t["wins"] = str(sum(1 for r in results if r["classification"] and r["classification"][0]["team"] == t["name"]))
         results.sort(key=lambda r: r["date"], reverse=True)
-        return {"status": "ok", "source": "Blacktop Data (ocblacktop.com)", "season": str(dt.date.today().year), "round": results[0]["round"] if results else "",
-                "drivers": drivers, "teams": teams, "sessions": sorted(sessions, key=lambda s: s["start"]), "results": results}
+        done = sum(1 for e in cur if e.get("status") == "completed")
+        return {"status": "ok", "source": "Blacktop Data (ocblacktop.com)", "season": season, "round": str(done),
+                "drivers": drivers, "teams": teams, "sessions": sessions, "results": results}
     except Exception as e:
-        print(f"WARN {series}: {e}")
+        print(f"WARN {series}: {type(e).__name__}")
         return {"status": "coming_soon", "note": "Blacktop request failed; showing no data rather than stale or guessed data."}
 
 def ics(name, sessions):

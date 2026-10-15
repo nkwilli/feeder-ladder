@@ -9,7 +9,7 @@ async function load(){
   if($('#standings')) standings(d); if($('#schedule')) schedule(d);
 }
 function standings(d){
-  $('#meta').textContent=`F1 ${d.f1.season} after round ${d.f1.round}. F2 and F3 standings update after each round once connected.`;
+  $('#meta').textContent=['f1','f2','f3'].filter(s=>d[s].status==='ok').map(s=>`${LABEL[s]} ${d[s].season} after round ${d[s].round}`).join(' · ');
   $('#standings').innerHTML=['f1','f2','f3'].map(s=>{const x=d[s];
     if(x.status!=='ok') return `<div class="card"><h2>${LABEL[s]}</h2><h3>Drivers</h3>${soon(s,'driver standings')}<h3>Teams</h3>${soon(s,'team standings')}</div>`;
     return `<div class="card"><h2>${LABEL[s]} ${x.season}</h2><h3>Drivers</h3>${tbl(x.drivers,[['#','pos'],['Driver','name'],['Team','team'],['Pts','points','n'],['W','wins','n']])}
@@ -35,6 +35,7 @@ function schedule(d){
             <ol class="podium">${pod.map(p=>`<li>${esc(p.name)} <small>${esc(p.team)}</small></li>`).join('')}</ol><span class="more">Full classification ▾</span></summary>
             ${tbl(c,[['Pos','pos'],['Driver','name'],['Team','team'],['Time/Status','time'],['Pts','points','n']])}</details>`}).join('')}</div>`}
       const up=x.sessions.filter(e=>Date.parse(e.start)>now-3*3600e3).slice(0,24);
+      if(!up.length) return `<div class="card"><h2>${LABEL[s]}</h2><p class="sub">No upcoming sessions. The ${esc(x.season)} season is complete; see Past events &amp; results.</p></div>`;
       return `<div class="card"><h2>${LABEL[s]}</h2>${tbl(up.map(e=>({...e,when:f.format(new Date(e.start))})),[['Event','event'],['Session','session'],['When','when']])}</div>`}).join('');};
   document.querySelectorAll('#view button').forEach(b=>b.onclick=()=>{view=b.dataset.v;history.replaceState(null,'',view==='past'?'#past':location.pathname);draw($('#tz').value)});
   draw(saved); $('#tz').onchange=e=>{localStorage.setItem('tz',e.target.value);draw(e.target.value)};
