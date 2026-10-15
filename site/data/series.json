@@ -1,0 +1,940 @@
+{
+ "updated": "2026-10-15T00:49:18+00:00",
+ "f1": {
+  "status": "ok",
+  "source": "Jolpica (api.jolpi.ca)",
+  "season": "2026",
+  "round": "17",
+  "drivers": [
+   {
+    "pos": "1",
+    "name": "Andrea Kimi Antonelli",
+    "team": "Mercedes",
+    "points": "340",
+    "wins": "8"
+   },
+   {
+    "pos": "2",
+    "name": "George Russell",
+    "team": "Mercedes",
+    "points": "238",
+    "wins": "3"
+   },
+   {
+    "pos": "3",
+    "name": "Lewis Hamilton",
+    "team": "Ferrari",
+    "points": "229",
+    "wins": "1"
+   },
+   {
+    "pos": "4",
+    "name": "Max Verstappen",
+    "team": "Red Bull",
+    "points": "221",
+    "wins": "2"
+   },
+   {
+    "pos": "5",
+    "name": "Charles Leclerc",
+    "team": "Ferrari",
+    "points": "215",
+    "wins": "1"
+   },
+   {
+    "pos": "6",
+    "name": "Lando Norris",
+    "team": "McLaren",
+    "points": "201",
+    "wins": "2"
+   },
+   {
+    "pos": "7",
+    "name": "Oscar Piastri",
+    "team": "McLaren",
+    "points": "138",
+    "wins": "0"
+   },
+   {
+    "pos": "8",
+    "name": "Isack Hadjar",
+    "team": "Red Bull",
+    "points": "97",
+    "wins": "0"
+   },
+   {
+    "pos": "9",
+    "name": "Liam Lawson",
+    "team": "Red Bull",
+    "points": "75",
+    "wins": "0"
+   },
+   {
+    "pos": "10",
+    "name": "Pierre Gasly",
+    "team": "Alpine F1 Team",
+    "points": "41",
+    "wins": "0"
+   },
+   {
+    "pos": "11",
+    "name": "Arvid Lindblad",
+    "team": "RB F1 Team",
+    "points": "38",
+    "wins": "0"
+   },
+   {
+    "pos": "12",
+    "name": "Franco Colapinto",
+    "team": "Alpine F1 Team",
+    "points": "27",
+    "wins": "0"
+   },
+   {
+    "pos": "13",
+    "name": "Oliver Bearman",
+    "team": "Haas F1 Team",
+    "points": "23",
+    "wins": "0"
+   },
+   {
+    "pos": "14",
+    "name": "Nico H\u00fclkenberg",
+    "team": "Audi",
+    "points": "13",
+    "wins": "0"
+   },
+   {
+    "pos": "15",
+    "name": "Gabriel Bortoleto",
+    "team": "Audi",
+    "points": "10",
+    "wins": "0"
+   },
+   {
+    "pos": "16",
+    "name": "Esteban Ocon",
+    "team": "Haas F1 Team",
+    "points": "7",
+    "wins": "0"
+   },
+   {
+    "pos": "17",
+    "name": "Fernando Alonso",
+    "team": "Aston Martin",
+    "points": "7",
+    "wins": "0"
+   },
+   {
+    "pos": "18",
+    "name": "Carlos Sainz",
+    "team": "Williams",
+    "points": "7",
+    "wins": "0"
+   },
+   {
+    "pos": "19",
+    "name": "Alexander Albon",
+    "team": "Williams",
+    "points": "5",
+    "wins": "0"
+   },
+   {
+    "pos": "20",
+    "name": "Yuki Tsunoda",
+    "team": "RB F1 Team",
+    "points": "1",
+    "wins": "0"
+   },
+   {
+    "pos": "21",
+    "name": "Lance Stroll",
+    "team": "Aston Martin",
+    "points": "0",
+    "wins": "0"
+   },
+   {
+    "pos": "22",
+    "name": "Valtteri Bottas",
+    "team": "Cadillac F1 Team",
+    "points": "0",
+    "wins": "0"
+   },
+   {
+    "pos": "23",
+    "name": "Sergio P\u00e9rez",
+    "team": "Cadillac F1 Team",
+    "points": "0",
+    "wins": "0"
+   }
+  ],
+  "teams": [
+   {
+    "pos": "1",
+    "name": "Mercedes",
+    "points": "578",
+    "wins": "11"
+   },
+   {
+    "pos": "2",
+    "name": "Ferrari",
+    "points": "444",
+    "wins": "2"
+   },
+   {
+    "pos": "3",
+    "name": "McLaren",
+    "points": "339",
+    "wins": "2"
+   },
+   {
+    "pos": "4",
+    "name": "Red Bull",
+    "points": "332",
+    "wins": "2"
+   },
+   {
+    "pos": "5",
+    "name": "RB F1 Team",
+    "points": "100",
+    "wins": "0"
+   },
+   {
+    "pos": "6",
+    "name": "Alpine F1 Team",
+    "points": "68",
+    "wins": "0"
+   },
+   {
+    "pos": "7",
+    "name": "Haas F1 Team",
+    "points": "30",
+    "wins": "0"
+   },
+   {
+    "pos": "8",
+    "name": "Audi",
+    "points": "23",
+    "wins": "0"
+   },
+   {
+    "pos": "9",
+    "name": "Williams",
+    "points": "12",
+    "wins": "0"
+   },
+   {
+    "pos": "10",
+    "name": "Aston Martin",
+    "points": "7",
+    "wins": "0"
+   },
+   {
+    "pos": "11",
+    "name": "Cadillac F1 Team",
+    "points": "0",
+    "wins": "0"
+   }
+  ],
+  "sessions": [
+   {
+    "event": "Australian Grand Prix (Round 1)",
+    "session": "Practice 1",
+    "start": "2026-03-06T01:30:00Z",
+    "place": "Melbourne"
+   },
+   {
+    "event": "Australian Grand Prix (Round 1)",
+    "session": "Practice 2",
+    "start": "2026-03-06T05:00:00Z",
+    "place": "Melbourne"
+   },
+   {
+    "event": "Australian Grand Prix (Round 1)",
+    "session": "Practice 3",
+    "start": "2026-03-07T01:30:00Z",
+    "place": "Melbourne"
+   },
+   {
+    "event": "Australian Grand Prix (Round 1)",
+    "session": "Qualifying",
+    "start": "2026-03-07T05:00:00Z",
+    "place": "Melbourne"
+   },
+   {
+    "event": "Australian Grand Prix (Round 1)",
+    "session": "Race",
+    "start": "2026-03-08T04:00:00Z",
+    "place": "Melbourne"
+   },
+   {
+    "event": "Chinese Grand Prix (Round 2)",
+    "session": "Practice 1",
+    "start": "2026-03-13T03:30:00Z",
+    "place": "Shanghai"
+   },
+   {
+    "event": "Chinese Grand Prix (Round 2)",
+    "session": "Sprint Qualifying",
+    "start": "2026-03-13T07:30:00Z",
+    "place": "Shanghai"
+   },
+   {
+    "event": "Chinese Grand Prix (Round 2)",
+    "session": "Sprint",
+    "start": "2026-03-14T03:00:00Z",
+    "place": "Shanghai"
+   },
+   {
+    "event": "Chinese Grand Prix (Round 2)",
+    "session": "Qualifying",
+    "start": "2026-03-14T07:00:00Z",
+    "place": "Shanghai"
+   },
+   {
+    "event": "Chinese Grand Prix (Round 2)",
+    "session": "Race",
+    "start": "2026-03-15T07:00:00Z",
+    "place": "Shanghai"
+   },
+   {
+    "event": "Japanese Grand Prix (Round 3)",
+    "session": "Practice 1",
+    "start": "2026-03-27T02:30:00Z",
+    "place": "Suzuka"
+   },
+   {
+    "event": "Japanese Grand Prix (Round 3)",
+    "session": "Practice 2",
+    "start": "2026-03-27T06:00:00Z",
+    "place": "Suzuka"
+   },
+   {
+    "event": "Japanese Grand Prix (Round 3)",
+    "session": "Practice 3",
+    "start": "2026-03-28T02:30:00Z",
+    "place": "Suzuka"
+   },
+   {
+    "event": "Japanese Grand Prix (Round 3)",
+    "session": "Qualifying",
+    "start": "2026-03-28T06:00:00Z",
+    "place": "Suzuka"
+   },
+   {
+    "event": "Japanese Grand Prix (Round 3)",
+    "session": "Race",
+    "start": "2026-03-29T05:00:00Z",
+    "place": "Suzuka"
+   },
+   {
+    "event": "Miami Grand Prix (Round 4)",
+    "session": "Practice 1",
+    "start": "2026-05-01T16:00:00Z",
+    "place": "Miami"
+   },
+   {
+    "event": "Miami Grand Prix (Round 4)",
+    "session": "Sprint Qualifying",
+    "start": "2026-05-01T20:30:00Z",
+    "place": "Miami"
+   },
+   {
+    "event": "Miami Grand Prix (Round 4)",
+    "session": "Sprint",
+    "start": "2026-05-02T16:00:00Z",
+    "place": "Miami"
+   },
+   {
+    "event": "Miami Grand Prix (Round 4)",
+    "session": "Qualifying",
+    "start": "2026-05-02T20:00:00Z",
+    "place": "Miami"
+   },
+   {
+    "event": "Miami Grand Prix (Round 4)",
+    "session": "Race",
+    "start": "2026-05-03T20:00:00Z",
+    "place": "Miami"
+   },
+   {
+    "event": "Canadian Grand Prix (Round 5)",
+    "session": "Practice 1",
+    "start": "2026-05-22T16:30:00Z",
+    "place": "Montreal"
+   },
+   {
+    "event": "Canadian Grand Prix (Round 5)",
+    "session": "Sprint Qualifying",
+    "start": "2026-05-22T20:30:00Z",
+    "place": "Montreal"
+   },
+   {
+    "event": "Canadian Grand Prix (Round 5)",
+    "session": "Sprint",
+    "start": "2026-05-23T16:00:00Z",
+    "place": "Montreal"
+   },
+   {
+    "event": "Canadian Grand Prix (Round 5)",
+    "session": "Qualifying",
+    "start": "2026-05-23T20:00:00Z",
+    "place": "Montreal"
+   },
+   {
+    "event": "Canadian Grand Prix (Round 5)",
+    "session": "Race",
+    "start": "2026-05-24T20:00:00Z",
+    "place": "Montreal"
+   },
+   {
+    "event": "Monaco Grand Prix (Round 6)",
+    "session": "Practice 1",
+    "start": "2026-06-05T11:30:00Z",
+    "place": "Monte Carlo"
+   },
+   {
+    "event": "Monaco Grand Prix (Round 6)",
+    "session": "Practice 2",
+    "start": "2026-06-05T15:00:00Z",
+    "place": "Monte Carlo"
+   },
+   {
+    "event": "Monaco Grand Prix (Round 6)",
+    "session": "Practice 3",
+    "start": "2026-06-06T10:30:00Z",
+    "place": "Monte Carlo"
+   },
+   {
+    "event": "Monaco Grand Prix (Round 6)",
+    "session": "Qualifying",
+    "start": "2026-06-06T14:00:00Z",
+    "place": "Monte Carlo"
+   },
+   {
+    "event": "Monaco Grand Prix (Round 6)",
+    "session": "Race",
+    "start": "2026-06-07T13:00:00Z",
+    "place": "Monte Carlo"
+   },
+   {
+    "event": "Barcelona Grand Prix (Round 7)",
+    "session": "Practice 1",
+    "start": "2026-06-12T11:30:00Z",
+    "place": "Barcelona"
+   },
+   {
+    "event": "Barcelona Grand Prix (Round 7)",
+    "session": "Practice 2",
+    "start": "2026-06-12T15:00:00Z",
+    "place": "Barcelona"
+   },
+   {
+    "event": "Barcelona Grand Prix (Round 7)",
+    "session": "Practice 3",
+    "start": "2026-06-13T10:30:00Z",
+    "place": "Barcelona"
+   },
+   {
+    "event": "Barcelona Grand Prix (Round 7)",
+    "session": "Qualifying",
+    "start": "2026-06-13T14:00:00Z",
+    "place": "Barcelona"
+   },
+   {
+    "event": "Barcelona Grand Prix (Round 7)",
+    "session": "Race",
+    "start": "2026-06-14T13:00:00Z",
+    "place": "Barcelona"
+   },
+   {
+    "event": "Austrian Grand Prix (Round 8)",
+    "session": "Practice 1",
+    "start": "2026-06-26T11:30:00Z",
+    "place": "Spielberg"
+   },
+   {
+    "event": "Austrian Grand Prix (Round 8)",
+    "session": "Practice 2",
+    "start": "2026-06-26T15:00:00Z",
+    "place": "Spielberg"
+   },
+   {
+    "event": "Austrian Grand Prix (Round 8)",
+    "session": "Practice 3",
+    "start": "2026-06-27T10:30:00Z",
+    "place": "Spielberg"
+   },
+   {
+    "event": "Austrian Grand Prix (Round 8)",
+    "session": "Qualifying",
+    "start": "2026-06-27T14:00:00Z",
+    "place": "Spielberg"
+   },
+   {
+    "event": "Austrian Grand Prix (Round 8)",
+    "session": "Race",
+    "start": "2026-06-28T13:00:00Z",
+    "place": "Spielberg"
+   },
+   {
+    "event": "British Grand Prix (Round 9)",
+    "session": "Practice 1",
+    "start": "2026-07-03T11:30:00Z",
+    "place": "Silverstone"
+   },
+   {
+    "event": "British Grand Prix (Round 9)",
+    "session": "Sprint Qualifying",
+    "start": "2026-07-03T15:30:00Z",
+    "place": "Silverstone"
+   },
+   {
+    "event": "British Grand Prix (Round 9)",
+    "session": "Sprint",
+    "start": "2026-07-04T11:00:00Z",
+    "place": "Silverstone"
+   },
+   {
+    "event": "British Grand Prix (Round 9)",
+    "session": "Qualifying",
+    "start": "2026-07-04T15:00:00Z",
+    "place": "Silverstone"
+   },
+   {
+    "event": "British Grand Prix (Round 9)",
+    "session": "Race",
+    "start": "2026-07-05T14:00:00Z",
+    "place": "Silverstone"
+   },
+   {
+    "event": "Belgian Grand Prix (Round 10)",
+    "session": "Practice 1",
+    "start": "2026-07-17T11:30:00Z",
+    "place": "Spa"
+   },
+   {
+    "event": "Belgian Grand Prix (Round 10)",
+    "session": "Practice 2",
+    "start": "2026-07-17T15:00:00Z",
+    "place": "Spa"
+   },
+   {
+    "event": "Belgian Grand Prix (Round 10)",
+    "session": "Practice 3",
+    "start": "2026-07-18T10:30:00Z",
+    "place": "Spa"
+   },
+   {
+    "event": "Belgian Grand Prix (Round 10)",
+    "session": "Qualifying",
+    "start": "2026-07-18T14:00:00Z",
+    "place": "Spa"
+   },
+   {
+    "event": "Belgian Grand Prix (Round 10)",
+    "session": "Race",
+    "start": "2026-07-19T13:00:00Z",
+    "place": "Spa"
+   },
+   {
+    "event": "Hungarian Grand Prix (Round 11)",
+    "session": "Practice 1",
+    "start": "2026-07-24T11:30:00Z",
+    "place": "Budapest"
+   },
+   {
+    "event": "Hungarian Grand Prix (Round 11)",
+    "session": "Practice 2",
+    "start": "2026-07-24T15:00:00Z",
+    "place": "Budapest"
+   },
+   {
+    "event": "Hungarian Grand Prix (Round 11)",
+    "session": "Practice 3",
+    "start": "2026-07-25T10:30:00Z",
+    "place": "Budapest"
+   },
+   {
+    "event": "Hungarian Grand Prix (Round 11)",
+    "session": "Qualifying",
+    "start": "2026-07-25T14:00:00Z",
+    "place": "Budapest"
+   },
+   {
+    "event": "Hungarian Grand Prix (Round 11)",
+    "session": "Race",
+    "start": "2026-07-26T13:00:00Z",
+    "place": "Budapest"
+   },
+   {
+    "event": "Dutch Grand Prix (Round 12)",
+    "session": "Practice 1",
+    "start": "2026-08-21T10:30:00Z",
+    "place": "Zandvoort"
+   },
+   {
+    "event": "Dutch Grand Prix (Round 12)",
+    "session": "Sprint Qualifying",
+    "start": "2026-08-21T14:30:00Z",
+    "place": "Zandvoort"
+   },
+   {
+    "event": "Dutch Grand Prix (Round 12)",
+    "session": "Sprint",
+    "start": "2026-08-22T10:00:00Z",
+    "place": "Zandvoort"
+   },
+   {
+    "event": "Dutch Grand Prix (Round 12)",
+    "session": "Qualifying",
+    "start": "2026-08-22T14:00:00Z",
+    "place": "Zandvoort"
+   },
+   {
+    "event": "Dutch Grand Prix (Round 12)",
+    "session": "Race",
+    "start": "2026-08-23T13:00:00Z",
+    "place": "Zandvoort"
+   },
+   {
+    "event": "Italian Grand Prix (Round 13)",
+    "session": "Practice 1",
+    "start": "2026-09-04T10:30:00Z",
+    "place": "Monza"
+   },
+   {
+    "event": "Italian Grand Prix (Round 13)",
+    "session": "Practice 2",
+    "start": "2026-09-04T14:00:00Z",
+    "place": "Monza"
+   },
+   {
+    "event": "Italian Grand Prix (Round 13)",
+    "session": "Practice 3",
+    "start": "2026-09-05T10:30:00Z",
+    "place": "Monza"
+   },
+   {
+    "event": "Italian Grand Prix (Round 13)",
+    "session": "Qualifying",
+    "start": "2026-09-05T14:00:00Z",
+    "place": "Monza"
+   },
+   {
+    "event": "Italian Grand Prix (Round 13)",
+    "session": "Race",
+    "start": "2026-09-06T13:00:00Z",
+    "place": "Monza"
+   },
+   {
+    "event": "Spanish Grand Prix (Round 14)",
+    "session": "Practice 1",
+    "start": "2026-09-11T11:30:00Z",
+    "place": "Madrid"
+   },
+   {
+    "event": "Spanish Grand Prix (Round 14)",
+    "session": "Practice 2",
+    "start": "2026-09-11T15:00:00Z",
+    "place": "Madrid"
+   },
+   {
+    "event": "Spanish Grand Prix (Round 14)",
+    "session": "Practice 3",
+    "start": "2026-09-12T10:30:00Z",
+    "place": "Madrid"
+   },
+   {
+    "event": "Spanish Grand Prix (Round 14)",
+    "session": "Qualifying",
+    "start": "2026-09-12T14:00:00Z",
+    "place": "Madrid"
+   },
+   {
+    "event": "Spanish Grand Prix (Round 14)",
+    "session": "Race",
+    "start": "2026-09-13T13:00:00Z",
+    "place": "Madrid"
+   },
+   {
+    "event": "Azerbaijan Grand Prix (Round 15)",
+    "session": "Practice 1",
+    "start": "2026-09-24T08:30:00Z",
+    "place": "Baku"
+   },
+   {
+    "event": "Azerbaijan Grand Prix (Round 15)",
+    "session": "Practice 2",
+    "start": "2026-09-24T12:00:00Z",
+    "place": "Baku"
+   },
+   {
+    "event": "Azerbaijan Grand Prix (Round 15)",
+    "session": "Practice 3",
+    "start": "2026-09-25T08:30:00Z",
+    "place": "Baku"
+   },
+   {
+    "event": "Azerbaijan Grand Prix (Round 15)",
+    "session": "Qualifying",
+    "start": "2026-09-25T12:00:00Z",
+    "place": "Baku"
+   },
+   {
+    "event": "Azerbaijan Grand Prix (Round 15)",
+    "session": "Race",
+    "start": "2026-09-26T11:00:00Z",
+    "place": "Baku"
+   },
+   {
+    "event": "Bahrain Grand Prix in Malaysia (Round 16)",
+    "session": "Practice 1",
+    "start": "2026-10-02T04:30:00Z",
+    "place": "Kuala Lumpur"
+   },
+   {
+    "event": "Bahrain Grand Prix in Malaysia (Round 16)",
+    "session": "Practice 2",
+    "start": "2026-10-02T08:00:00Z",
+    "place": "Kuala Lumpur"
+   },
+   {
+    "event": "Bahrain Grand Prix in Malaysia (Round 16)",
+    "session": "Practice 3",
+    "start": "2026-10-03T04:30:00Z",
+    "place": "Kuala Lumpur"
+   },
+   {
+    "event": "Bahrain Grand Prix in Malaysia (Round 16)",
+    "session": "Qualifying",
+    "start": "2026-10-03T08:00:00Z",
+    "place": "Kuala Lumpur"
+   },
+   {
+    "event": "Bahrain Grand Prix in Malaysia (Round 16)",
+    "session": "Race",
+    "start": "2026-10-04T07:00:00Z",
+    "place": "Kuala Lumpur"
+   },
+   {
+    "event": "Singapore Grand Prix (Round 17)",
+    "session": "Practice 1",
+    "start": "2026-10-09T08:30:00Z",
+    "place": "Marina Bay"
+   },
+   {
+    "event": "Singapore Grand Prix (Round 17)",
+    "session": "Sprint Qualifying",
+    "start": "2026-10-09T12:30:00Z",
+    "place": "Marina Bay"
+   },
+   {
+    "event": "Singapore Grand Prix (Round 17)",
+    "session": "Sprint",
+    "start": "2026-10-10T09:00:00Z",
+    "place": "Marina Bay"
+   },
+   {
+    "event": "Singapore Grand Prix (Round 17)",
+    "session": "Qualifying",
+    "start": "2026-10-10T13:00:00Z",
+    "place": "Marina Bay"
+   },
+   {
+    "event": "Singapore Grand Prix (Round 17)",
+    "session": "Race",
+    "start": "2026-10-11T12:00:00Z",
+    "place": "Marina Bay"
+   },
+   {
+    "event": "United States Grand Prix (Round 18)",
+    "session": "Practice 1",
+    "start": "2026-10-23T17:30:00Z",
+    "place": "Austin"
+   },
+   {
+    "event": "United States Grand Prix (Round 18)",
+    "session": "Practice 2",
+    "start": "2026-10-23T21:00:00Z",
+    "place": "Austin"
+   },
+   {
+    "event": "United States Grand Prix (Round 18)",
+    "session": "Practice 3",
+    "start": "2026-10-24T17:30:00Z",
+    "place": "Austin"
+   },
+   {
+    "event": "United States Grand Prix (Round 18)",
+    "session": "Qualifying",
+    "start": "2026-10-24T21:00:00Z",
+    "place": "Austin"
+   },
+   {
+    "event": "United States Grand Prix (Round 18)",
+    "session": "Race",
+    "start": "2026-10-25T20:00:00Z",
+    "place": "Austin"
+   },
+   {
+    "event": "Mexico City Grand Prix (Round 19)",
+    "session": "Practice 1",
+    "start": "2026-10-30T18:30:00Z",
+    "place": "Mexico City"
+   },
+   {
+    "event": "Mexico City Grand Prix (Round 19)",
+    "session": "Practice 2",
+    "start": "2026-10-30T22:00:00Z",
+    "place": "Mexico City"
+   },
+   {
+    "event": "Mexico City Grand Prix (Round 19)",
+    "session": "Practice 3",
+    "start": "2026-10-31T17:30:00Z",
+    "place": "Mexico City"
+   },
+   {
+    "event": "Mexico City Grand Prix (Round 19)",
+    "session": "Qualifying",
+    "start": "2026-10-31T21:00:00Z",
+    "place": "Mexico City"
+   },
+   {
+    "event": "Mexico City Grand Prix (Round 19)",
+    "session": "Race",
+    "start": "2026-11-01T20:00:00Z",
+    "place": "Mexico City"
+   },
+   {
+    "event": "Brazilian Grand Prix (Round 20)",
+    "session": "Practice 1",
+    "start": "2026-11-06T15:30:00Z",
+    "place": "S\u00e3o Paulo"
+   },
+   {
+    "event": "Brazilian Grand Prix (Round 20)",
+    "session": "Practice 2",
+    "start": "2026-11-06T19:00:00Z",
+    "place": "S\u00e3o Paulo"
+   },
+   {
+    "event": "Brazilian Grand Prix (Round 20)",
+    "session": "Practice 3",
+    "start": "2026-11-07T14:30:00Z",
+    "place": "S\u00e3o Paulo"
+   },
+   {
+    "event": "Brazilian Grand Prix (Round 20)",
+    "session": "Qualifying",
+    "start": "2026-11-07T18:00:00Z",
+    "place": "S\u00e3o Paulo"
+   },
+   {
+    "event": "Brazilian Grand Prix (Round 20)",
+    "session": "Race",
+    "start": "2026-11-08T17:00:00Z",
+    "place": "S\u00e3o Paulo"
+   },
+   {
+    "event": "Las Vegas Grand Prix (Round 21)",
+    "session": "Practice 1",
+    "start": "2026-11-20T00:30:00Z",
+    "place": "Las Vegas"
+   },
+   {
+    "event": "Las Vegas Grand Prix (Round 21)",
+    "session": "Practice 2",
+    "start": "2026-11-20T04:00:00Z",
+    "place": "Las Vegas"
+   },
+   {
+    "event": "Las Vegas Grand Prix (Round 21)",
+    "session": "Practice 3",
+    "start": "2026-11-21T00:30:00Z",
+    "place": "Las Vegas"
+   },
+   {
+    "event": "Las Vegas Grand Prix (Round 21)",
+    "session": "Qualifying",
+    "start": "2026-11-21T04:00:00Z",
+    "place": "Las Vegas"
+   },
+   {
+    "event": "Las Vegas Grand Prix (Round 21)",
+    "session": "Race",
+    "start": "2026-11-22T04:00:00Z",
+    "place": "Las Vegas"
+   },
+   {
+    "event": "Qatar Grand Prix (Round 22)",
+    "session": "Practice 1",
+    "start": "2026-11-27T13:30:00Z",
+    "place": "Lusail"
+   },
+   {
+    "event": "Qatar Grand Prix (Round 22)",
+    "session": "Practice 2",
+    "start": "2026-11-27T17:00:00Z",
+    "place": "Lusail"
+   },
+   {
+    "event": "Qatar Grand Prix (Round 22)",
+    "session": "Practice 3",
+    "start": "2026-11-28T14:30:00Z",
+    "place": "Lusail"
+   },
+   {
+    "event": "Qatar Grand Prix (Round 22)",
+    "session": "Qualifying",
+    "start": "2026-11-28T18:00:00Z",
+    "place": "Lusail"
+   },
+   {
+    "event": "Qatar Grand Prix (Round 22)",
+    "session": "Race",
+    "start": "2026-11-29T16:00:00Z",
+    "place": "Lusail"
+   },
+   {
+    "event": "Abu Dhabi Grand Prix (Round 23)",
+    "session": "Practice 1",
+    "start": "2026-12-04T09:30:00Z",
+    "place": "Abu Dhabi"
+   },
+   {
+    "event": "Abu Dhabi Grand Prix (Round 23)",
+    "session": "Practice 2",
+    "start": "2026-12-04T13:00:00Z",
+    "place": "Abu Dhabi"
+   },
+   {
+    "event": "Abu Dhabi Grand Prix (Round 23)",
+    "session": "Practice 3",
+    "start": "2026-12-05T10:30:00Z",
+    "place": "Abu Dhabi"
+   },
+   {
+    "event": "Abu Dhabi Grand Prix (Round 23)",
+    "session": "Qualifying",
+    "start": "2026-12-05T14:00:00Z",
+    "place": "Abu Dhabi"
+   },
+   {
+    "event": "Abu Dhabi Grand Prix (Round 23)",
+    "session": "Race",
+    "start": "2026-12-06T13:00:00Z",
+    "place": "Abu Dhabi"
+   }
+  ]
+ },
+ "f2": {
+  "status": "coming_soon",
+  "note": "Needs a free Blacktop Data API key (BLACKTOP_API_KEY). No data shown until then."
+ },
+ "f3": {
+  "status": "coming_soon",
+  "note": "Needs a free Blacktop Data API key (BLACKTOP_API_KEY). No data shown until then."
+ }
+}
