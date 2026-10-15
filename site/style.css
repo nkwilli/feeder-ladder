@@ -12,3 +12,8 @@ table{width:100%;border-collapse:collapse;font-size:.88rem}td,th{padding:4px 6px
 select{background:#0f1218;color:#e7e9ee;border:1px solid #475063;padding:4px;border-radius:4px}
 #cals a{display:inline-block;margin:0 8px 12px 0;padding:6px 10px;background:#1f2633;border-radius:6px;color:#e7e9ee;text-decoration:none}
 footer{margin-top:30px;padding:16px 24px;background:#171b24;color:#7c8596;font-size:.78rem}
+
+.toggle{display:inline-flex;gap:4px;margin:8px 8px 8px 0;background:#171b24;padding:4px;border-radius:8px}.toggle button{background:none;border:0;color:#9aa3b2;padding:6px 12px;border-radius:6px;font-weight:600;cursor:pointer}.toggle button[aria-pressed=true]{background:#2dd4bf;color:#0f1218}
+details.race{border-bottom:1px solid #262c38;padding:8px 0}details.race summary{cursor:pointer;list-style:none}details.race summary small{color:#9aa3b2}
+.podium{margin:4px 0;padding-left:20px;font-size:.9rem}.podium small{color:#9aa3b2}.more{font-size:.78rem;color:#2dd4bf}details[open] .more{display:none}
+.badge.cat{background:#1f2633;color:#e7e9ee}.item.is-rumor{border-left:4px solid #fbbf24}
