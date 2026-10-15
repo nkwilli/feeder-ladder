@@ -8,15 +8,21 @@ concurrency: {group: pages, cancel-in-progress: false}
 jobs:
   build:
     runs-on: ubuntu-latest
-    environment: {name: github-pages, url: "${{ steps.deploy.outputs.page_url }}"}
+    environment:
+      name: github-pages
+      url: "${{ steps.deploy.outputs.page_url }}"
     steps:
       - uses: actions/checkout@v4
       - uses: actions/cache@v4
-        with: {path: .cache, key: api-cache-${{ github.run_id }}, restore-keys: api-cache-}
+        with:
+          path: .cache
+          key: "api-cache-${{ github.run_id }}"
+          restore-keys: api-cache-
       - uses: actions/setup-python@v5
         with: {python-version: "3.12"}
       - run: python scripts/refresh.py
-        env: {BLACKTOP_API_KEY: "${{ secrets.BLACKTOP_API_KEY }}"}
+        env:
+          BLACKTOP_API_KEY: "${{ secrets.BLACKTOP_API_KEY }}"
       - run: |
           git config user.name "data-bot"; git config user.email "data-bot@users.noreply.github.com"
           git add site/data site/cal && git commit -m "Refresh data [skip ci]" && git push || echo "no changes"
