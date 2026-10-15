@@ -1,11 +1,14 @@
-name: Refresh data
+name: Refresh data and deploy
 on:
   schedule: [{cron: "17 */3 * * *"}]   # every 3h; well under Jolpica's 500 req/hr
+  push: {branches: [main]}
   workflow_dispatch:
-permissions: {contents: write}
+permissions: {contents: write, pages: write, id-token: write}
+concurrency: {group: pages, cancel-in-progress: false}
 jobs:
-  refresh:
+  build:
     runs-on: ubuntu-latest
+    environment: {name: github-pages, url: "${{ steps.deploy.outputs.page_url }}"}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/cache@v4
@@ -16,5 +19,9 @@ jobs:
         env: {BLACKTOP_API_KEY: "${{ secrets.BLACKTOP_API_KEY }}"}
       - run: |
           git config user.name "data-bot"; git config user.email "data-bot@users.noreply.github.com"
-          git add site/data site/cal && git commit -m "Refresh data" || echo "no changes"
-          git push
+          git add site/data site/cal && git commit -m "Refresh data [skip ci]" && git push || echo "no changes"
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with: {path: site}
+      - id: deploy
+        uses: actions/deploy-pages@v4
