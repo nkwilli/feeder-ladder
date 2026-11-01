@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-31T19:18:28+00:00",
+ "updated": "2026-11-01T00:08:45+00:00",
  "f1": {
   "results": [
    {
@@ -2922,7 +2922,7 @@
   "status": "ok",
   "source": "Jolpica (api.jolpi.ca)",
   "season": "2026",
-  "round": "18",
+  "round": "19",
   "drivers": [
    {
     "pos": "1",
@@ -3082,6 +3082,13 @@
     "pos": "23",
     "name": "Sergio P\u00e9rez",
     "team": "Cadillac F1 Team",
+    "points": "0",
+    "wins": "0"
+   },
+   {
+    "pos": "24",
+    "name": "Ryo Hirakawa",
+    "team": "Haas F1 Team",
     "points": "0",
     "wins": "0"
    }
