@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-02T11:09:28+00:00",
+ "updated": "2026-11-02T21:43:33+00:00",
  "f1": {
   "results": [
    {
@@ -52,79 +52,79 @@
      },
      {
       "pos": "7",
-      "name": "Oscar Piastri",
-      "team": "McLaren",
-      "time": "+19.475",
+      "name": "Liam Lawson",
+      "team": "RB F1 Team",
+      "time": "+20.899",
       "points": "6"
      },
      {
       "pos": "8",
-      "name": "Franco Colapinto",
-      "team": "Alpine F1 Team",
-      "time": "+20.204",
+      "name": "Gabriel Bortoleto",
+      "team": "Audi",
+      "time": "+22.041",
       "points": "4"
      },
      {
       "pos": "9",
-      "name": "Liam Lawson",
-      "team": "RB F1 Team",
-      "time": "+20.899",
+      "name": "Isack Hadjar",
+      "team": "Red Bull",
+      "time": "+22.503",
       "points": "2"
      },
      {
       "pos": "10",
-      "name": "Pierre Gasly",
-      "team": "Alpine F1 Team",
-      "time": "+21.483",
+      "name": "Ryo Hirakawa",
+      "team": "Haas F1 Team",
+      "time": "+25.373",
       "points": "1"
      },
      {
       "pos": "11",
-      "name": "Gabriel Bortoleto",
-      "team": "Audi",
-      "time": "+22.041",
-      "points": "0"
-     },
-     {
-      "pos": "12",
-      "name": "Isack Hadjar",
-      "team": "Red Bull",
-      "time": "+22.503",
-      "points": "0"
-     },
-     {
-      "pos": "13",
-      "name": "Ryo Hirakawa",
-      "team": "Haas F1 Team",
-      "time": "+25.373",
-      "points": "0"
-     },
-     {
-      "pos": "14",
       "name": "Alexander Albon",
       "team": "Williams",
       "time": "+27.562",
       "points": "0"
      },
      {
-      "pos": "15",
+      "pos": "12",
       "name": "Carlos Sainz",
       "team": "Williams",
       "time": "+28.638",
       "points": "0"
      },
      {
-      "pos": "16",
+      "pos": "13",
+      "name": "Oscar Piastri",
+      "team": "McLaren",
+      "time": "+29.475",
+      "points": "0"
+     },
+     {
+      "pos": "14",
       "name": "Nico H\u00fclkenberg",
       "team": "Audi",
       "time": "+29.977",
       "points": "0"
      },
      {
-      "pos": "17",
+      "pos": "15",
+      "name": "Franco Colapinto",
+      "team": "Alpine F1 Team",
+      "time": "+30.204",
+      "points": "0"
+     },
+     {
+      "pos": "16",
       "name": "Sergio P\u00e9rez",
       "team": "Cadillac F1 Team",
       "time": "+30.695",
+      "points": "0"
+     },
+     {
+      "pos": "17",
+      "name": "Pierre Gasly",
+      "team": "Alpine F1 Team",
+      "time": "+51.483",
       "points": "0"
      },
      {
@@ -3132,28 +3132,28 @@
     "pos": "7",
     "name": "Oscar Piastri",
     "team": "McLaren",
-    "points": "150",
+    "points": "144",
     "wins": "0"
    },
    {
     "pos": "8",
     "name": "Isack Hadjar",
     "team": "Red Bull",
-    "points": "105",
+    "points": "107",
     "wins": "0"
    },
    {
     "pos": "9",
     "name": "Liam Lawson",
     "team": "Red Bull",
-    "points": "79",
+    "points": "83",
     "wins": "0"
    },
    {
     "pos": "10",
     "name": "Pierre Gasly",
     "team": "Alpine F1 Team",
-    "points": "43",
+    "points": "42",
     "wins": "0"
    },
    {
@@ -3167,7 +3167,7 @@
     "pos": "12",
     "name": "Franco Colapinto",
     "team": "Alpine F1 Team",
-    "points": "31",
+    "points": "27",
     "wins": "0"
    },
    {
@@ -3179,16 +3179,16 @@
    },
    {
     "pos": "14",
-    "name": "Nico H\u00fclkenberg",
+    "name": "Gabriel Bortoleto",
     "team": "Audi",
-    "points": "13",
+    "points": "14",
     "wins": "0"
    },
    {
     "pos": "15",
-    "name": "Gabriel Bortoleto",
+    "name": "Nico H\u00fclkenberg",
     "team": "Audi",
-    "points": "10",
+    "points": "13",
     "wins": "0"
    },
    {
@@ -3228,22 +3228,22 @@
    },
    {
     "pos": "21",
+    "name": "Ryo Hirakawa",
+    "team": "Haas F1 Team",
+    "points": "1",
+    "wins": "0"
+   },
+   {
+    "pos": "22",
     "name": "Lance Stroll",
     "team": "Aston Martin",
     "points": "0",
     "wins": "0"
    },
    {
-    "pos": "22",
+    "pos": "23",
     "name": "Valtteri Bottas",
     "team": "Cadillac F1 Team",
-    "points": "0",
-    "wins": "0"
-   },
-   {
-    "pos": "23",
-    "name": "Ryo Hirakawa",
-    "team": "Haas F1 Team",
     "points": "0",
     "wins": "0"
    },
@@ -3271,37 +3271,37 @@
    {
     "pos": "3",
     "name": "Red Bull",
-    "points": "380",
+    "points": "382",
     "wins": "3"
    },
    {
     "pos": "4",
     "name": "McLaren",
-    "points": "371",
+    "points": "365",
     "wins": "2"
    },
    {
     "pos": "5",
     "name": "RB F1 Team",
-    "points": "104",
+    "points": "108",
     "wins": "0"
    },
    {
     "pos": "6",
     "name": "Alpine F1 Team",
-    "points": "74",
+    "points": "69",
     "wins": "0"
    },
    {
     "pos": "7",
     "name": "Haas F1 Team",
-    "points": "30",
+    "points": "31",
     "wins": "0"
    },
    {
     "pos": "8",
     "name": "Audi",
-    "points": "23",
+    "points": "27",
     "wins": "0"
    },
    {
