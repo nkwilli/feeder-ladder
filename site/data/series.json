@@ -1,7 +1,169 @@
 {
- "updated": "2026-11-08T17:56:12+00:00",
+ "updated": "2026-11-08T22:06:34+00:00",
  "f1": {
   "results": [
+   {
+    "round": "20",
+    "event": "Brazilian Grand Prix",
+    "date": "2026-11-08",
+    "place": "S\u00e3o Paulo",
+    "classification": [
+     {
+      "pos": "1",
+      "name": "Lando Norris",
+      "team": "McLaren",
+      "time": "1:35:23.504",
+      "points": "25"
+     },
+     {
+      "pos": "2",
+      "name": "Max Verstappen",
+      "team": "Red Bull",
+      "time": "+14.602",
+      "points": "18"
+     },
+     {
+      "pos": "3",
+      "name": "Isack Hadjar",
+      "team": "Red Bull",
+      "time": "+24.485",
+      "points": "15"
+     },
+     {
+      "pos": "4",
+      "name": "George Russell",
+      "team": "Mercedes",
+      "time": "+33.991",
+      "points": "12"
+     },
+     {
+      "pos": "5",
+      "name": "Andrea Kimi Antonelli",
+      "team": "Mercedes",
+      "time": "+36.017",
+      "points": "10"
+     },
+     {
+      "pos": "6",
+      "name": "Oscar Piastri",
+      "team": "McLaren",
+      "time": "+56.475",
+      "points": "8"
+     },
+     {
+      "pos": "7",
+      "name": "Charles Leclerc",
+      "team": "Ferrari",
+      "time": "+1:13.586",
+      "points": "6"
+     },
+     {
+      "pos": "8",
+      "name": "Liam Lawson",
+      "team": "RB F1 Team",
+      "time": "+1:15.402",
+      "points": "4"
+     },
+     {
+      "pos": "9",
+      "name": "Lewis Hamilton",
+      "team": "Ferrari",
+      "time": "Lapped",
+      "points": "2"
+     },
+     {
+      "pos": "10",
+      "name": "Nico H\u00fclkenberg",
+      "team": "Audi",
+      "time": "Lapped",
+      "points": "1"
+     },
+     {
+      "pos": "11",
+      "name": "Arvid Lindblad",
+      "team": "RB F1 Team",
+      "time": "Lapped",
+      "points": "0"
+     },
+     {
+      "pos": "12",
+      "name": "Fernando Alonso",
+      "team": "Aston Martin",
+      "time": "Lapped",
+      "points": "0"
+     },
+     {
+      "pos": "13",
+      "name": "Franco Colapinto",
+      "team": "Alpine F1 Team",
+      "time": "Lapped",
+      "points": "0"
+     },
+     {
+      "pos": "14",
+      "name": "Pierre Gasly",
+      "team": "Alpine F1 Team",
+      "time": "Lapped",
+      "points": "0"
+     },
+     {
+      "pos": "15",
+      "name": "Alexander Albon",
+      "team": "Williams",
+      "time": "Lapped",
+      "points": "0"
+     },
+     {
+      "pos": "16",
+      "name": "Gabriel Bortoleto",
+      "team": "Audi",
+      "time": "Lapped",
+      "points": "0"
+     },
+     {
+      "pos": "17",
+      "name": "Oliver Bearman",
+      "team": "Haas F1 Team",
+      "time": "Lapped",
+      "points": "0"
+     },
+     {
+      "pos": "18",
+      "name": "Sergio P\u00e9rez",
+      "team": "Cadillac F1 Team",
+      "time": "Lapped",
+      "points": "0"
+     },
+     {
+      "pos": "19",
+      "name": "Carlos Sainz",
+      "team": "Williams",
+      "time": "Lapped",
+      "points": "0"
+     },
+     {
+      "pos": "20",
+      "name": "Rafael Camara",
+      "team": "Haas F1 Team",
+      "time": "Lapped",
+      "points": "0"
+     },
+     {
+      "pos": "R",
+      "name": "Lance Stroll",
+      "team": "Aston Martin",
+      "time": "Retired",
+      "points": "0"
+     },
+     {
+      "pos": "W",
+      "name": "Valtteri Bottas",
+      "team": "Cadillac F1 Team",
+      "time": "Did not start",
+      "points": "0"
+     }
+    ]
+   },
    {
     "round": "19",
     "event": "Mexico City Grand Prix",
@@ -3090,63 +3252,63 @@
     "pos": "1",
     "name": "Andrea Kimi Antonelli",
     "team": "Mercedes",
-    "points": "380",
+    "points": "390",
     "wins": "9"
    },
    {
     "pos": "2",
     "name": "Max Verstappen",
     "team": "Red Bull",
-    "points": "261",
+    "points": "279",
     "wins": "3"
    },
    {
     "pos": "3",
-    "name": "Lewis Hamilton",
-    "team": "Ferrari",
-    "points": "259",
-    "wins": "1"
+    "name": "George Russell",
+    "team": "Mercedes",
+    "points": "262",
+    "wins": "3"
    },
    {
     "pos": "4",
-    "name": "George Russell",
-    "team": "Mercedes",
-    "points": "250",
-    "wins": "3"
+    "name": "Lewis Hamilton",
+    "team": "Ferrari",
+    "points": "261",
+    "wins": "1"
    },
    {
     "pos": "5",
     "name": "Charles Leclerc",
     "team": "Ferrari",
-    "points": "245",
+    "points": "251",
     "wins": "1"
    },
    {
     "pos": "6",
     "name": "Lando Norris",
     "team": "McLaren",
-    "points": "221",
-    "wins": "2"
+    "points": "246",
+    "wins": "3"
    },
    {
     "pos": "7",
     "name": "Oscar Piastri",
     "team": "McLaren",
-    "points": "144",
+    "points": "152",
     "wins": "0"
    },
    {
     "pos": "8",
     "name": "Isack Hadjar",
     "team": "Red Bull",
-    "points": "107",
+    "points": "122",
     "wins": "0"
    },
    {
     "pos": "9",
     "name": "Liam Lawson",
     "team": "Red Bull",
-    "points": "83",
+    "points": "87",
     "wins": "0"
    },
    {
@@ -3188,7 +3350,7 @@
     "pos": "15",
     "name": "Nico H\u00fclkenberg",
     "team": "Audi",
-    "points": "13",
+    "points": "14",
     "wins": "0"
    },
    {
@@ -3266,31 +3428,31 @@
    {
     "pos": "1",
     "name": "Mercedes",
-    "points": "630",
+    "points": "652",
     "wins": "12"
    },
    {
     "pos": "2",
     "name": "Ferrari",
-    "points": "504",
+    "points": "512",
     "wins": "2"
    },
    {
     "pos": "3",
     "name": "Red Bull",
-    "points": "382",
+    "points": "415",
     "wins": "3"
    },
    {
     "pos": "4",
     "name": "McLaren",
-    "points": "365",
-    "wins": "2"
+    "points": "398",
+    "wins": "3"
    },
    {
     "pos": "5",
     "name": "RB F1 Team",
-    "points": "108",
+    "points": "112",
     "wins": "0"
    },
    {
@@ -3308,7 +3470,7 @@
    {
     "pos": "8",
     "name": "Audi",
-    "points": "27",
+    "points": "28",
     "wins": "0"
    },
    {
