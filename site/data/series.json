@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08T22:06:34+00:00",
+ "updated": "2026-11-09T06:31:51+00:00",
  "f1": {
   "results": [
    {
@@ -40,7 +40,7 @@
       "pos": "5",
       "name": "Andrea Kimi Antonelli",
       "team": "Mercedes",
-      "time": "+36.017",
+      "time": "+41.017",
       "points": "10"
      },
      {
@@ -52,16 +52,16 @@
      },
      {
       "pos": "7",
-      "name": "Charles Leclerc",
-      "team": "Ferrari",
-      "time": "+1:13.586",
+      "name": "Liam Lawson",
+      "team": "RB F1 Team",
+      "time": "+1:15.402",
       "points": "6"
      },
      {
       "pos": "8",
-      "name": "Liam Lawson",
-      "team": "RB F1 Team",
-      "time": "+1:15.402",
+      "name": "Charles Leclerc",
+      "team": "Ferrari",
+      "time": "+1:18.586",
       "points": "4"
      },
      {
@@ -3280,7 +3280,7 @@
     "pos": "5",
     "name": "Charles Leclerc",
     "team": "Ferrari",
-    "points": "251",
+    "points": "249",
     "wins": "1"
    },
    {
@@ -3308,7 +3308,7 @@
     "pos": "9",
     "name": "Liam Lawson",
     "team": "Red Bull",
-    "points": "87",
+    "points": "89",
     "wins": "0"
    },
    {
@@ -3434,7 +3434,7 @@
    {
     "pos": "2",
     "name": "Ferrari",
-    "points": "512",
+    "points": "510",
     "wins": "2"
    },
    {
@@ -3452,7 +3452,7 @@
    {
     "pos": "5",
     "name": "RB F1 Team",
-    "points": "112",
+    "points": "114",
     "wins": "0"
    },
    {
