@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T02:19:47+00:00",
+ "updated": "2026-11-20T11:41:52+00:00",
  "f1": {
   "results": [
    {
@@ -4193,10 +4193,10 @@
   "drivers": [
    {
     "pos": "1",
-    "name": "Rafael C\u00e2mara",
+    "name": "Rafael Camara",
     "points": "207",
-    "wins": "3",
-    "team": "Invicta Racing"
+    "wins": "0",
+    "team": ""
    },
    {
     "pos": "2",
