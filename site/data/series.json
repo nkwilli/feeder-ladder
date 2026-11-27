@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T16:55:20+00:00",
+ "updated": "2026-11-27T01:44:31+00:00",
  "f1": {
   "results": [
    {
@@ -4611,25 +4611,25 @@
    {
     "event": "Yas Island (Round 14)",
     "session": "Practice",
-    "start": "2026-12-03T20:00:00Z",
+    "start": "2026-12-04T07:05:00Z",
     "place": "Yas Marina Circuit"
    },
    {
     "event": "Yas Island (Round 14)",
     "session": "Qualifying",
-    "start": "2026-12-03T20:00:00Z",
+    "start": "2026-12-04T11:00:00Z",
     "place": "Yas Marina Circuit"
    },
    {
     "event": "Yas Island (Round 14)",
     "session": "Sprint Race",
-    "start": "2026-12-04T20:00:00Z",
+    "start": "2026-12-05T12:15:59Z",
     "place": "Yas Marina Circuit"
    },
    {
     "event": "Yas Island (Round 14)",
     "session": "Feature Race",
-    "start": "2026-12-05T20:00:00Z",
+    "start": "2026-12-06T09:15:00Z",
     "place": "Yas Marina Circuit"
    }
   ],
