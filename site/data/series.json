@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27T12:22:49+00:00",
+ "updated": "2026-11-27T23:27:57+00:00",
  "f1": {
   "results": [
    {
@@ -4584,12 +4584,6 @@
    }
   ],
   "sessions": [
-   {
-    "event": "Lusail (Round 13)",
-    "session": "Qualifying",
-    "start": "2026-11-27T15:00:00Z",
-    "place": "Lusail International Circuit"
-   },
    {
     "event": "Lusail (Round 13)",
     "session": "Sprint Race",
