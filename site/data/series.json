@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-28T07:50:23+00:00",
+ "updated": "2026-11-28T17:33:34+00:00",
  "f1": {
   "results": [
    {
@@ -4363,49 +4363,49 @@
    {
     "pos": "2",
     "name": "Nikola Tsolov",
-    "points": "200",
+    "points": "205",
     "wins": "6",
     "team": "Campos Racing"
    },
    {
     "pos": "3",
     "name": "Alexander Dunne",
-    "points": "189",
+    "points": "193",
     "wins": "1",
     "team": "Rodin Motorsport"
    },
    {
     "pos": "4",
     "name": "Gabriele Mini",
-    "points": "163",
+    "points": "165",
     "wins": "2",
     "team": "MP Motorsport"
    },
    {
     "pos": "5",
+    "name": "Noel Leon",
+    "points": "139",
+    "wins": "3",
+    "team": "Campos Racing"
+   },
+   {
+    "pos": "6",
     "name": "Dino Beganovic",
     "points": "137",
     "wins": "2",
     "team": "DAMS Lucas Oil"
    },
    {
-    "pos": "6",
-    "name": "Noel Leon",
-    "points": "133",
-    "wins": "3",
-    "team": "Campos Racing"
-   },
-   {
     "pos": "7",
     "name": "Martinius Stenshorne",
-    "points": "107",
-    "wins": "1",
+    "points": "118",
+    "wins": "2",
     "team": "Rodin Motorsport"
    },
    {
     "pos": "8",
     "name": "Joshua D\u00fcrksen",
-    "points": "90",
+    "points": "98",
     "wins": "4",
     "team": "Invicta Racing"
    },
@@ -4440,37 +4440,37 @@
    {
     "pos": "13",
     "name": "Rafael Villagomez",
-    "points": "42",
+    "points": "43",
     "wins": "0",
     "team": "Van Amersfoort Racing"
    },
    {
     "pos": "14",
+    "name": "Oliver Goethe",
+    "points": "40",
+    "wins": "0",
+    "team": "MP Motorsport"
+   },
+   {
+    "pos": "15",
     "name": "John Bennett",
     "points": "38",
     "wins": "1",
     "team": "TRIDENT"
    },
    {
-    "pos": "15",
-    "name": "Oliver Goethe",
-    "points": "37",
-    "wins": "0",
-    "team": "MP Motorsport"
-   },
-   {
     "pos": "16",
     "name": "Roman Bilinski",
     "points": "36",
     "wins": "0",
-    "team": "DAMS Lucas Oil"
+    "team": "Hitech"
    },
    {
     "pos": "17",
     "name": "Sebastian Montoya",
     "points": "30",
     "wins": "0",
-    "team": "PREMA Racing"
+    "team": "DAMS Lucas Oil"
    },
    {
     "pos": "18",
@@ -4513,31 +4513,52 @@
     "points": "2",
     "wins": "0",
     "team": "Van Amersfoort Racing"
+   },
+   {
+    "pos": "24",
+    "name": "Nicola Lacorte",
+    "points": "0",
+    "wins": "0",
+    "team": "PREMA Racing"
+   },
+   {
+    "pos": "25",
+    "name": "Ugo Ugochukwu",
+    "points": "0",
+    "wins": "0",
+    "team": "Van Amersfoort Racing"
+   },
+   {
+    "pos": "26",
+    "name": "Nicolas Pino",
+    "points": "0",
+    "wins": "0",
+    "team": "AIX Racing"
    }
   ],
   "teams": [
    {
     "pos": "1",
     "name": "Campos Racing",
-    "points": "333",
+    "points": "344",
     "wins": "9"
    },
    {
     "pos": "2",
-    "name": "Invicta Racing",
-    "points": "297",
-    "wins": "7"
+    "name": "Rodin Motorsport",
+    "points": "311",
+    "wins": "3"
    },
    {
     "pos": "3",
-    "name": "Rodin Motorsport",
-    "points": "296",
-    "wins": "2"
+    "name": "Invicta Racing",
+    "points": "305",
+    "wins": "7"
    },
    {
     "pos": "4",
     "name": "MP Motorsport",
-    "points": "200",
+    "points": "205",
     "wins": "2"
    },
    {
@@ -4567,7 +4588,7 @@
    {
     "pos": "9",
     "name": "Van Amersfoort Racing",
-    "points": "59",
+    "points": "60",
     "wins": "0"
    },
    {
@@ -4584,12 +4605,6 @@
    }
   ],
   "sessions": [
-   {
-    "event": "Lusail (Round 13)",
-    "session": "Sprint Race",
-    "start": "2026-11-28T16:15:00Z",
-    "place": "Lusail International Circuit"
-   },
    {
     "event": "Lusail (Round 13)",
     "session": "Feature Race",
@@ -4622,6 +4637,168 @@
    }
   ],
   "results": [
+   {
+    "round": "13",
+    "event": "Lusail \u2013 Sprint Race",
+    "date": "2026-11-28",
+    "place": "Lusail International Circuit",
+    "classification": [
+     {
+      "pos": "1",
+      "name": "Martinius Stenshorne",
+      "team": "Rodin Motorsport",
+      "time": "41:48.605",
+      "points": "11"
+     },
+     {
+      "pos": "2",
+      "name": "Joshua D\u00fcrksen",
+      "team": "Invicta Racing",
+      "time": "+10.960s",
+      "points": "8"
+     },
+     {
+      "pos": "3",
+      "name": "Noel Leon",
+      "team": "Campos Racing",
+      "time": "+14.245s",
+      "points": "6"
+     },
+     {
+      "pos": "4",
+      "name": "Nikola Tsolov",
+      "team": "Campos Racing",
+      "time": "+14.688s",
+      "points": "5"
+     },
+     {
+      "pos": "5",
+      "name": "Alexander Dunne",
+      "team": "Rodin Motorsport",
+      "time": "+16.017s",
+      "points": "4"
+     },
+     {
+      "pos": "6",
+      "name": "Oliver Goethe",
+      "team": "MP Motorsport",
+      "time": "+16.931s",
+      "points": "3"
+     },
+     {
+      "pos": "7",
+      "name": "Gabriele Mini",
+      "team": "MP Motorsport",
+      "time": "+18.790s",
+      "points": "2"
+     },
+     {
+      "pos": "8",
+      "name": "Rafael Villagomez",
+      "team": "Van Amersfoort Racing",
+      "time": "+20.606s",
+      "points": "1"
+     },
+     {
+      "pos": "9",
+      "name": "Roman Bilinski",
+      "team": "Hitech",
+      "time": "+21.078s",
+      "points": "0"
+     },
+     {
+      "pos": "10",
+      "name": "Dino Beganovic",
+      "team": "DAMS Lucas Oil",
+      "time": "+21.895s",
+      "points": "0"
+     },
+     {
+      "pos": "11",
+      "name": "Kush Maini",
+      "team": "ART Grand Prix",
+      "time": "+23.410s",
+      "points": "0"
+     },
+     {
+      "pos": "12",
+      "name": "Tasanapol Inthraphuvasak",
+      "team": "ART Grand Prix",
+      "time": "+24.752s",
+      "points": "0"
+     },
+     {
+      "pos": "13",
+      "name": "Ritomo Miyata",
+      "team": "Hitech",
+      "time": "+29.565s",
+      "points": "0"
+     },
+     {
+      "pos": "14",
+      "name": "Sebastian Montoya",
+      "team": "DAMS Lucas Oil",
+      "time": "+32.978s",
+      "points": "0"
+     },
+     {
+      "pos": "15",
+      "name": "Emerson Fittipaldi",
+      "team": "AIX Racing",
+      "time": "+35.788s",
+      "points": "0"
+     },
+     {
+      "pos": "16",
+      "name": "Nicola Lacorte",
+      "team": "PREMA Racing",
+      "time": "+37.991s",
+      "points": "0"
+     },
+     {
+      "pos": "17",
+      "name": "Ugo Ugochukwu",
+      "team": "Van Amersfoort Racing",
+      "time": "+76.397s",
+      "points": "0"
+     },
+     {
+      "pos": "18",
+      "name": "Nicolas Pino",
+      "team": "AIX Racing",
+      "time": "+80.341s",
+      "points": "0"
+     },
+     {
+      "pos": "19",
+      "name": "Laurens van Hoepen",
+      "team": "TRIDENT",
+      "time": "DNF",
+      "points": "0"
+     },
+     {
+      "pos": "20",
+      "name": "Freddie Slater",
+      "team": "Invicta Racing",
+      "time": "DNF",
+      "points": "0"
+     },
+     {
+      "pos": "21",
+      "name": "John Bennett",
+      "team": "TRIDENT",
+      "time": "DNF",
+      "points": "0"
+     },
+     {
+      "pos": "22",
+      "name": "Mari Boya",
+      "team": "PREMA Racing",
+      "time": "DNF",
+      "points": "0"
+     }
+    ]
+   },
    {
     "round": "12",
     "event": "Baku \u2013 Feature Race 2",
